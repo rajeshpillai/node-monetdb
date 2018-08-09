@@ -56,5 +56,22 @@ app.post('/getdata', function (req, res) {
     //res.send({test:"hellp getdata method"});
  })
 
+
+//  app.get('/getTables', function (req, res) {
+//     //console.log(req);
+//     console.log("Got a POST request for getTables");
+
+//     var conn = new MDB(options);
+//     conn.connect();
+    
+//     conn.query('select tables.name from tables where tables.system=false',true).then(function(result) {
+//         // Do something with the result
+//         console.log('result.data',result.data);
+//         res.send(result.data);
+//     });
+    
+//     conn.close();
+
+// })
  
 app.listen(4000)
